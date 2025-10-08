@@ -1,0 +1,104 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - dialog "Place order" [ref=e2]:
+    - document [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - heading "Place order" [level=5] [ref=e6]
+          - button "Close" [ref=e7] [cursor=pointer]:
+            - generic [ref=e8] [cursor=pointer]: ×
+        - generic [ref=e10]:
+          - generic [ref=e11]: "Total: 820"
+          - generic [ref=e12]:
+            - generic [ref=e13]: "Name:"
+            - 'textbox "Total: 820 Name:" [ref=e14]': Adrien Test
+          - generic [ref=e15]:
+            - generic [ref=e16]: "Country:"
+            - textbox "Country:" [ref=e17]: France
+          - generic [ref=e18]:
+            - generic [ref=e19]: "City:"
+            - textbox "City:" [ref=e20]: Nantes
+          - generic [ref=e21]:
+            - generic [ref=e22]: "Credit card:"
+            - textbox "Credit card:" [ref=e23]: 1111 2222 3333 4444
+          - generic [ref=e24]:
+            - generic [ref=e25]: "Month:"
+            - textbox "Month:" [ref=e26]: December
+          - generic [ref=e27]:
+            - generic [ref=e28]: "Year:"
+            - textbox "Year:" [ref=e29]: "2028"
+        - generic [ref=e31]:
+          - button "Close" [ref=e32]
+          - button "Purchase" [active] [ref=e33]
+  - text:             X 
+  - navigation [ref=e34]:
+    - generic [ref=e35]:
+      - link "PRODUCT STORE" [ref=e36] [cursor=pointer]:
+        - /url: index.html
+        - img [ref=e37] [cursor=pointer]
+        - text: PRODUCT STORE
+      - list [ref=e39]:
+        - listitem [ref=e40]:
+          - link "Home (current)" [ref=e41] [cursor=pointer]:
+            - /url: index.html
+            - text: Home
+            - generic [ref=e42] [cursor=pointer]: (current)
+        - listitem [ref=e43]:
+          - link "Contact" [ref=e44] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e45]:
+          - link "About us" [ref=e46] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e47]:
+          - link "Cart" [ref=e48] [cursor=pointer]:
+            - /url: "#"
+        - listitem
+        - listitem [ref=e49]:
+          - link "Log out" [ref=e50] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e51]:
+          - link "Welcome thisuserisforaEndToEnd" [ref=e52] [cursor=pointer]:
+            - /url: "#"
+        - listitem
+  - generic [ref=e54]:
+    - generic [ref=e55]:
+      - heading "Products" [level=2] [ref=e56]
+      - table [ref=e58]:
+        - rowgroup [ref=e59]:
+          - row "Pic Title Price x" [ref=e60]:
+            - cell "Pic" [ref=e61]
+            - cell "Title" [ref=e62]
+            - cell "Price" [ref=e63]
+            - cell "x" [ref=e64]
+        - rowgroup [ref=e65]:
+          - row "Nokia lumia 1520 820 Delete" [ref=e66]:
+            - cell [ref=e67]:
+              - img [ref=e68]
+            - cell "Nokia lumia 1520" [ref=e69]
+            - cell "820" [ref=e70]
+            - cell "Delete" [ref=e71]:
+              - link "Delete" [ref=e72] [cursor=pointer]:
+                - /url: "#"
+    - generic [ref=e73]:
+      - heading "Total" [level=2] [ref=e74]
+      - heading "820" [level=3] [ref=e77]
+      - button "Place Order" [ref=e78]
+  - generic [ref=e80]:
+    - generic [ref=e83]:
+      - heading "About Us" [level=4] [ref=e84]:
+        - generic [ref=e85]: About Us
+      - paragraph [ref=e86]: We believe performance needs to be validated at every stage of the software development cycle and our open source compatible, massively scalable platform makes that a reality.
+    - generic [ref=e89]:
+      - heading "Get in Touch" [level=4] [ref=e90]:
+        - generic [ref=e91]: Get in Touch
+      - paragraph [ref=e92]: "Address: 2390 El Camino Real"
+      - paragraph [ref=e93]: "Phone: +440 123456"
+      - paragraph [ref=e94]: "Email: demo@blazemeter.com"
+    - heading "PRODUCT STORE" [level=4] [ref=e98]:
+      - img [ref=e99]
+      - text: PRODUCT STORE
+  - contentinfo [ref=e100]:
+    - paragraph [ref=e101]: Copyright © Product Store
+```

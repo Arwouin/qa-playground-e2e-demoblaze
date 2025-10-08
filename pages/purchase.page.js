@@ -52,6 +52,7 @@ class Purchase extends BasePage {
     };
 
     async addItemToCart() {
+        await this.addCart.waitFor({ state: 'visible', timeout: 60000 });
         await this.addCart.click();
     };
 

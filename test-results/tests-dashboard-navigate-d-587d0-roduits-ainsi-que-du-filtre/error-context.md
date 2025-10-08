@@ -1,0 +1,68 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - text:             X 
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "PRODUCT STORE" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img [ref=e5] [cursor=pointer]
+        - text: PRODUCT STORE
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home (current)" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+            - text: Home
+            - generic [ref=e10] [cursor=pointer]: (current)
+        - listitem [ref=e11]:
+          - link "Contact" [ref=e12] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e13]:
+          - link "About us" [ref=e14] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e15]:
+          - link "Cart" [ref=e16] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e17]:
+          - link "Log in" [ref=e18] [cursor=pointer]:
+            - /url: "#"
+        - listitem
+        - listitem
+        - listitem [ref=e19]:
+          - link "Sign up" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+  - generic [ref=e22]:
+    - generic [ref=e23]:
+      - heading "Products" [level=2] [ref=e24]
+      - table [ref=e26]:
+        - rowgroup [ref=e27]:
+          - row "Pic Title Price x" [ref=e28]:
+            - cell "Pic" [ref=e29]
+            - cell "Title" [ref=e30]
+            - cell "Price" [ref=e31]
+            - cell "x" [ref=e32]
+        - rowgroup
+    - generic [ref=e33]:
+      - heading "Total" [level=2] [ref=e34]
+      - generic:
+        - generic:
+          - heading [level=3]
+      - button "Place Order" [ref=e35]
+  - generic [ref=e37]:
+    - generic [ref=e40]:
+      - heading "About Us" [level=4] [ref=e41]:
+        - generic [ref=e42]: About Us
+      - paragraph [ref=e43]: We believe performance needs to be validated at every stage of the software development cycle and our open source compatible, massively scalable platform makes that a reality.
+    - generic [ref=e46]:
+      - heading "Get in Touch" [level=4] [ref=e47]:
+        - generic [ref=e48]: Get in Touch
+      - paragraph [ref=e49]: "Address: 2390 El Camino Real"
+      - paragraph [ref=e50]: "Phone: +440 123456"
+      - paragraph [ref=e51]: "Email: demo@blazemeter.com"
+    - heading "PRODUCT STORE" [level=4] [ref=e55]:
+      - img [ref=e56]
+      - text: PRODUCT STORE
+  - contentinfo [ref=e57]:
+    - paragraph [ref=e58]: Copyright © Product Store
+```

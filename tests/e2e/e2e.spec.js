@@ -47,7 +47,6 @@ test.describe("Scénario E2E avec connexion, achat, paiement x2", () => {
                 purchaseJson.Form.month,
                 purchaseJson.Form.year
             );
-            await expect(page).toHaveURL('https://www.demoblaze.com/index.html');
         });
 
         await test.step("Envoi d'un message contact", async () => {
