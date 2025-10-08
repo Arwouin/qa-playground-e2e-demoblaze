@@ -1,0 +1,31 @@
+name: Playwright test on DemoBlaze
+
+on: [push, pull_request]
+
+jobs:
+    test:
+        timeout-minutes: 20
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+
+            - name: Clean Install dependencies
+              run: npm ci
+
+            - name: Build Docker Image
+              run: docker build -t tests-playwright-demoblaze .
+
+            - name: Run Docker Image
+              run: docker run --rm -v ${{ github.workspace }}/playwright-report:/app/playwright-report tests-playwright-demoblaze
+
+            - name: Upload report Playwright
+              uses: actions/upload-artifact@v4
+              with:
+                  name: report-playwright
+                  path: playwright-report/
