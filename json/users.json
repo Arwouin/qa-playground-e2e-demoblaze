@@ -1,0 +1,16 @@
+{
+    "Valid_user": {
+        "username": "thisusernameisatest",
+        "password": "secret_password" 
+    },
+
+    "e2e_user": {
+        "username": "thisuserisforaEndToEnd",
+        "password": "secret_password"
+    },
+
+    "NotSignUser": {
+        "username": "thisOneisNotSignUp",
+        "password": "password"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "MessageContact": {
+        "email": "contactmessage@gmail.com",
+        "name": "JeanJack",
+        "message": "This message is a test"
+    },
+
+    "E2EContact": {
+        "email": "arwouin@gmail.com",
+        "name": "Aiden",
+        "message": "J'ai acheté un téléphone sur votre site, il est arrivé en parfait état. Merci beaucoup."
+    }
+}
